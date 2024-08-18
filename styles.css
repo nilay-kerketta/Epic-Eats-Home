@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bad1e7;
+}
+
+a{
+
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.heading{
+    font-family: "Bebas Neue";
+    letter-spacing: 0.1vw;
+}
+
+.sub-heading{
+    font-family: "Fira Sans";
+}
+
+.menu-text{
+    font-family: "Gentium Plus";
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    background-color: #2b2626;
+    padding: 2vh 5vw;
+    flex-wrap: wrap;
+    font-weight: normal;
+}
+
+.header-left{
+    color: #ffe458;
+    letter-spacing: 0.4rem;
+}
+
+.header-right input{
+    width: 30vw;
+    height: 6vh;
+    border-radius: 1rem;
+    padding: 1vh 1vw;
+    border: 2px solid black;
+}
+
+.header-right button{
+    font-weight: bold;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.nav-bar{
+    background-color: #3a2424;
+    color: white;
+}
+
+.nav-bar ul{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.nav-bar li{
+    padding: 1vh 1vw;
+    color: white;
+}
+
+.hero-section{
+    padding: 15vh 20vw;
+    text-align: center;
+    height: auto;
+    background-color: #3b7392;
+}
+.hero-section h1{
+    font-size: 4rem;
+    word-spacing: 0.5rem;
+    color: #ffe458;
+}
+.hero-section p{
+    padding: 1vh 0vw 2vw 0vw;
+    font-size: 2rem;
+    color: white;
+}
+.hero-section button{
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.today-special{
+    padding: 3vh 2vw 2vh 2vw;
+    text-align: center;
+}
+.specials{
+    height: auto;
+    padding: 2vh 2vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2vw;
+}
+.special-box{
+    display: inline-block;
+    height: 63vh;
+    /* background-color: gray; */
+    border: 3px solid black;
+}
+.special-box-image{
+    background-color: pink;
+    height: 60%;
+}
+.ratings img{
+    width: 1.5vw;
+}
+.special-box-image img{
+    padding: 1vh 1vw;
+    width: 100%;
+    height: 100%;
+}
+.special-box-text{
+    text-align: center;
+    padding: 2vh 1vw;
+    color: white;
+    background-color: #2b2626;
+    height: 40%;
+}
+.special-box-text h3,
+.special-box-text p{
+    font-weight: bold;
+    padding: 0.5vh 1vw;
+}
+.special-box-text-price{
+    font-size: 1.2rem;
+    padding: 1vh;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2vh 1vw;
+}
+.menu-heading{
+    text-align: center;
+    padding: 5vh 0vw 2vh 0vw;
+}
+.menu{
+    height: auto;
+    padding: 0 2vw 2vh 2vw;
+}
+.menu-page{
+    display: flex;
+    height: auto;
+    border: 4px solid black;
+}
+.menu-page-left{
+    height: auto;
+    width: 50%;
+    background-color: pink;
+    border-right: 2px solid black;
+}
+.menu-page-right{
+    border-left: 2px solid black;
+    height: auto;
+    width: 50%;
+    background-color: pink;
+}
+.menu-text{
+    padding: 3vh 2vw;
+}
+.menu-item a{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+}
+.menu-item a:hover{
+    border-bottom: 2px solid black;
+    transition-duration: 0.3s ;
+    cursor: pointer;
+}
+.Category-head{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.menu-item{
+    position: relative;
+}
+.details{
+    display: none;
+    height:auto;
+    padding: 1.5vh 1.5vw;
+    width: auto;
+    background-color: #bad1e7;
+    position: absolute;
+    top: 2vh;
+    left: 20vw;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.details-image{
+    height: 60%;
+}
+.details-image img{
+    width: 100%;
+}
+.details h3{
+    text-align: center;
+}
+.details-info{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.back{
+    cursor: pointer;
+    background-color: #2b2626;
+    text-align: center;
+    color: white;
+    padding: 1vh 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 300px;
+    background-color:#2b2626;
+}
+
+#top{
+    border: none;
+    border-radius: 20%;
+    height: 5vh;
+    width: 5vw;
+    background-color: black;
+    color: white;
+    position:fixed;
+    left: 90%;
+    top: 90%;
+    display: block;
+}
+
+@media (max-width: 600px){
+    .header{
+        display: block;
+        text-align: center;
+    }
+
+    .header-left{
+        padding: 2vh 2vw;
+    }
+    .header-right{
+        padding-left: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+    .header-right input{
+        width: 60vw;
+        height: 4vh;
+    }
+    .header-right button{
+        height: 4vh;
+        width: 18vw;
+    }
+
+    .nav-bar ul{
+        justify-content: space-evenly;
+        padding: 2vw;
+    }
+    .nav-bar li{
+        font-size: 1.2rem;
+        padding: 1vh 1vw;
+    }
+    .hero-section{
+        padding: 10vh 4vw;
+    }
+    .hero-section h1{
+        font-size: 2.5rem;
+        word-spacing: 0rem;
+    }
+    .hero-section p{
+        font-size: 1.5rem;
+        padding: 0vh 2vw 3vh 2vw;
+    }
+    .hero-section button{
+        width: 20vw;
+    }
+    .specials{
+        grid-template-columns: repeat(2,1fr);
+        gap: 3vw;
+        padding: 3vw;
+    }
+    
+    .special-box{
+        height: 40vh;
+    }
+    .menu-page{
+        display: block;
+    }
+    .menu-page-left,
+    .menu-page-right{
+        background-color: lightpink;
+        height: auto;
+        width: auto;
+        border: 2px solid black;
+    }
+    .special-box-text,
+    .special-box-text h3,
+    .special-box-text p,
+    .ratings{
+        padding: 0.2vh;
+    }
+    .ordered{
+        font-size: 0.7rem;
+    }
+    .ratings img{
+
+        width: 12%;
+    }
+    .ratings{
+        padding-top: 1vh;
+        font-size: 1rem;
+    }
+    .special-box-text h3{
+        font-size: 1rem;
+    }
+    #top{
+        width: 10vw;
+        left: 85%;
+    }
+}
