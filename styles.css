@@ -254,7 +254,7 @@ footer{
 #top{
     border: none;
     border-radius: 20%;
-    height: 5vh;
+    height: 7vh;
     width: 5vw;
     background-color: black;
     color: white;
@@ -262,6 +262,7 @@ footer{
     left: 90%;
     top: 90%;
     display: block;
+    z-index: 1;
 }
 
 @media (max-width: 600px){
@@ -349,7 +350,8 @@ footer{
         font-size: 1rem;
     }
     #top{
-        width: 10vw;
+        width: 11vw;
         left: 85%;
+        
     }
 }
